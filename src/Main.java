@@ -1,15 +1,13 @@
-import java.util.Arrays;
-
 public class Main {
-
     public static void main(String[] args) {
-        int [][] matrix = new int[3][3];
-        int x=0;
 
-        for(int[] row:matrix)
-            Arrays.fill(row,x);
+        int[][] matrix = {
+                {1, 2, 3},
+                {4, 5, 6}
+        };
 
-        for(int[] row:matrix)
-            System.out.println(Arrays.toString(row));
+        int result = Matrix.sumMatrix(matrix);
+
+        System.out.println("Sum = " + result);
     }
 }
